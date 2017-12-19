@@ -1,6 +1,6 @@
 {
   "name": "node-project-validator",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A basic Node.js project validator",
   "main": "index.js",
   "files": [
