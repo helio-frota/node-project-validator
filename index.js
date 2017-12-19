@@ -3,7 +3,7 @@
 const { join } = require('path');
 const fs = require('fs');
 
-const projectHasPackageJson = (cwd, handleIt) => {
+const hasPackageJson = (cwd, handleIt) => {
   if (!fs.existsSync(join(cwd, 'package.json'))) {
     if (handleIt) {
       console.error('This is not a Node.js project (no package.json found).');
@@ -15,7 +15,7 @@ const projectHasPackageJson = (cwd, handleIt) => {
   return true;
 };
 
-const projectHasAnyDependencies = (cwd, handleIt) => {
+const hasAnyDependencies = (cwd, handleIt) => {
   let errors = 0;
   if (!require(`${cwd}/package.json`).dependencies) {
     errors++;
@@ -34,7 +34,7 @@ const projectHasAnyDependencies = (cwd, handleIt) => {
   return true;
 };
 
-const projectHasDevDependencies = (cwd, handleIt) => {
+const hasDevDependencies = (cwd, handleIt) => {
   if (!require(`${cwd}/package.json`).devDependencies) {
     if (handleIt) {
       console.error('The project has no dev dependencies declared.');
@@ -46,7 +46,7 @@ const projectHasDevDependencies = (cwd, handleIt) => {
   return true;
 };
 
-const projectHasDependencies = (cwd, handleIt) => {
+const hasDependencies = (cwd, handleIt) => {
   if (!require(`${cwd}/package.json`).dependencies) {
     if (handleIt) {
       console.error('The project has no dependencies declared.');
@@ -58,7 +58,7 @@ const projectHasDependencies = (cwd, handleIt) => {
   return true;
 };
 
-const projectHasNodeModules = (cwd, handleIt) => {
+const hasNodeModules = (cwd, handleIt) => {
   const modulesDir = join(cwd, 'node_modules');
   if (fs.existsSync(modulesDir)) {
     const content = fs.readdirSync(modulesDir).filter(e => e !== '.bin');
@@ -82,9 +82,9 @@ const projectHasNodeModules = (cwd, handleIt) => {
 };
 
 module.exports = {
-  projectHasPackageJson,
-  projectHasNodeModules,
-  projectHasDependencies,
-  projectHasDevDependencies,
-  projectHasAnyDependencies
+  hasPackageJson,
+  hasNodeModules,
+  hasDependencies,
+  hasDevDependencies,
+  hasAnyDependencies
 };

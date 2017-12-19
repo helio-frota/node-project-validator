@@ -19,18 +19,18 @@ const validator = require('node-project-validator');
 // The second parameter is a flag to choose if the validator
 // will handle with an error message + process.exit(1) (in case flag === true)
 // or return a boolean (flag === false) then you can handle with message you want.
-validator.projectHasPackageJson('.', false);
+validator.hasPackageJson('.', false);
 
-console.log(validator.projectHasPackageJson('my_project_root_dir', false));
+console.log(validator.hasPackageJson('project_dir', false));
 true
 
-console.log(validator.projectHasPackageJson('my_project_root_dir/test/', true));
+console.log(validator.hasPackageJson('project_dir/test/', true));
 'This is not a Node.js project (no package.json found).'
 
 // others functions:
 
-validator.projectHasDependencies('.', false);
-validator.projectHasDevDependencies('.', false);
-validator.projectHasAnyDependencies('.', false);
-validator.projectHasNodeModules('.', false);
+validator.hasDependencies('.', false);
+validator.hasDevDependencies('.', false);
+validator.hasAnyDependencies('.', false);
+validator.hasNodeModules('.', false);
 ```
