@@ -1,0 +1,23 @@
+{
+  "name": "node-project-validator",
+  "version": "0.1.0",
+  "description": "A basic Node.js project validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helio-frota/node-project-validator.git"
+  },
+  "keywords": [],
+  "author": "Helio Frota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helio-frota/node-project-validator/issues"
+  },
+  "homepage": "https://github.com/helio-frota/node-project-validator#readme",
+  "devDependencies": {
+    "jest": "^22.0.3"
+  }
+}
