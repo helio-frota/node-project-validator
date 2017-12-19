@@ -17,8 +17,9 @@ const validator = require('node-project-validator');
 
 // The first parameter is the project root directory
 // The second parameter is a flag to choose if the validator
-// will handle with an error message + process.exit(1) (in case flag === true)
-// or return a boolean (flag === false) then you can handle with message you want.
+// will handle with an error message + process.exit(1)
+// (in case flag === true) or return a boolean (flag === false)
+// then you can handle with message you want.
 validator.hasPackageJson('.', false);
 
 console.log(validator.hasPackageJson('project_dir', false));
