@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/helio-frota/node-project-validator#readme",
   "devDependencies": {
-    "jest": "^22.0.3"
+    "jest": "^24.1.0"
   }
 }
