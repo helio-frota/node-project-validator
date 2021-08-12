@@ -1,13 +1,13 @@
 # node-project-validator
 
-[![Build Status](https://travis-ci.org/helio-frota/node-project-validator.svg?branch=master)](https://travis-ci.org/helio-frota/node-project-validator)
+![Node.js CI](https://github.com/helio-frota/node-project-validator/workflows/ci/badge.svg)
 
 A basic Node.js project validator
 
 ## Install
 
 ```
-npm install node-project-validator -S
+npm i node-project-validator
 ```
 
 ## Usage
