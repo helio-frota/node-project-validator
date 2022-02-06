@@ -126,7 +126,7 @@ export const hasNodeModules = async (cwd, handleIt) => {
   } else {
     if (handleIt) {
       console.error(
-        'Directory node_modules not found. Please run npm install.'
+        'Directory `node_modules` not found. Please run npm install.'
       );
       process.exit(1);
     } else {
