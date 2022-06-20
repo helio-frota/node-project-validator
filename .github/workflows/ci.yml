@@ -5,12 +5,14 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  build:
+  test:
     uses: pkgjs/action/.github/workflows/node-test.yaml@v0
     with:
+      runs-on: ubuntu-latest
+      include: |
+         experimental: true
       upgrade-policy: lts
-    - run: npm ci
-    - name: Checking JS types
-      run: npm run check
-      continue-on-error: true
-    - run: npm test
+      post-install-steps: : |
+        - name: Checking JS types
+          run: npm run check
+      test-command: npm test
