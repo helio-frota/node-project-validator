@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
-  test:
+  build:
     uses: pkgjs/action/.github/workflows/node-test.yaml@v0
     with:
       upgrade-policy: lts
