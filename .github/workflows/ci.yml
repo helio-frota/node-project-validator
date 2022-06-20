@@ -9,8 +9,6 @@ jobs:
     uses: pkgjs/action/.github/workflows/node-test.yaml@v0
     with:
       runs-on: ubuntu-latest
-      include: |
-         experimental: true
       upgrade-policy: lts
       post-install-steps: |
         - name: Checking JS types
