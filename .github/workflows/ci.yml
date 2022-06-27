@@ -5,6 +5,7 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
+  shell: bash 
   test:
     uses: pkgjs/action/.github/workflows/node-test.yaml@v0
     with:
@@ -13,5 +14,4 @@ jobs:
       post-install-steps: |
         - name: Checking JS types
           run: npm run check
-      shell: bash    
       test-command: npm test
