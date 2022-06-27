@@ -34,8 +34,8 @@
   "homepage": "https://github.com/helio-frota/node-project-validator#readme",
   "devDependencies": {
     "@types/node": "^17.0.15",
-    "eslint": "^8.4.0",
-    "eslint-config-semistandard": "^16.0.0",
+    "eslint": "^8.18.0",
+    "eslint-config-standard": "^17.0.0",
     "husky": "^7.0.4",
     "jsdoc": "^3.6.7",
     "mocha": "^9.1.3",
