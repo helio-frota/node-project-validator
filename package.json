@@ -12,6 +12,7 @@
     "pretest": "eslint --ignore-path .gitignore",
     "release": "standard-version",
     "prepare": "husky install",
+    "postinstall": "npm run check",
     "check": "tsc --noEmit true"
   },
   "engines": {

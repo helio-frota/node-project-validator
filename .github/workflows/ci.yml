@@ -10,7 +10,4 @@ jobs:
     with:
       runs-on: ubuntu-latest
       upgrade-policy: lts
-      post-install-steps: |
-        - name: Checking JS types
-          run: npm run check
-      test-command: npm test
+        test-command: npm test
