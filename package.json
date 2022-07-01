@@ -10,10 +10,9 @@
   "scripts": {
     "test": "mocha",
     "pretest": "eslint --ignore-path .gitignore",
+    "posttest": "tsc --noEmit true",
     "release": "standard-version",
-    "prepare": "husky install",
-    "postinstall": "npm run check",
-    "check": "tsc --noEmit true"
+    "prepare": "husky install"
   },
   "engines": {
     "node": "18 || 16 || 14"
