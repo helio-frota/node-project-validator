@@ -10,4 +10,4 @@ jobs:
     with:
       runs-on: ubuntu-latest
       upgrade-policy: lts
-        test-command: npm test
+      test-command: npm test
