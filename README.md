@@ -3,6 +3,7 @@
 ![Node.js CI](https://github.com/helio-frota/node-project-validator/workflows/ci/badge.svg)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/helio-frota/node-project-validator.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/helio-frota/node-project-validator/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/helio-frota/node-project-validator.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/helio-frota/node-project-validator/context:javascript)
+[![codecov](https://codecov.io/gh/helio-frota/node-project-validator/branch/main/graph/badge.svg?token=AROHF2UZX9)](https://codecov.io/gh/helio-frota/node-project-validator)
 
 A basic Node.js project validator
 
