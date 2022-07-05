@@ -11,3 +11,6 @@ jobs:
       runs-on: ubuntu-latest
       upgrade-policy: lts
       test-command: npm test
+      post-test-steps: |
+        - name: Coverage Report
+          uses: codecov/codecov-action@v2
