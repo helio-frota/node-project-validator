@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/helio-frota/node-project-validator#readme",
   "devDependencies": {
-    "@types/node": "^17.0.15",
+    "@types/node": "^18.0.6",
     "c8": "^7.11.3",
     "eslint": "^8.18.0",
     "eslint-config-standard": "^17.0.0",
